@@ -42,10 +42,10 @@ class geoip (
 ) {
 
   file { $path:
-    ensure  => 'directory',
-    owner   => 'root',
-    group   => 'root',
-    mode    => '0555',
+    ensure => 'directory',
+    owner  => 'root',
+    group  => 'root',
+    mode   => '0555',
   }
 
 }
