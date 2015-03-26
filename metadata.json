@@ -13,8 +13,5 @@
     { "operatingsystem": "CentOS", "operatingsystemrelease": [ "6", "7" ] },
     { "operatingsystem": "Ubuntu", "operatingsystemrelease": [ "10.04", "12.04", "14.04" ] }
   ],
-  "dependencies": [
-    { "name": "puppetlabs/java", "version_requirement": ">=1.0.0 <2.0.0" },
-    { "name": "puppetlabs/stdlib", "version_requirement": ">=3.2.0 <5.0.0" }
-  ]
+  "dependencies": []
 }
