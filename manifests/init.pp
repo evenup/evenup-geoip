@@ -37,8 +37,8 @@
 #
 class geoip (
   $path     = '/usr/local/share/geoip',
-  $source   = '',
-  $version  = '',
+  $source   = undef,
+  $version  = undef,
 ) {
 
   file { $path:

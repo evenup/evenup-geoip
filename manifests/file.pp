@@ -26,24 +26,24 @@
 # Copyright 2013 EvenUp.
 #
 define geoip::file (
-  $source   = '',
-  $version  = '',
+  $source   = undef,
+  $version  = undef,
 ){
 
-  include geoip
+  include ::geoip
 
-  if $source == '' {
-    if $geoip::source == '' {
+  if !$source {
+    if !$::geoip::source {
       alert("GeoIP source not set for geoip::file{${name}}")
     } else {
-      $source_real = $geoip::source
+      $source_real = $::geoip::source
     }
   } else {
     $source_real = $source
   }
 
-  if $version == '' {
-    if $geoip::version == '' {
+  if !$version {
+    if !$::geoip::version {
       alert("GeoIP version not set for geoip::file{${name}}")
     } else {
       $version_real = $geoip::version
